@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFlex</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1f1f1f;
+            color: #ffffff;
+        }
+
+        header {
+            background: #121212;
+            color: #ffffff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            padding-right: 1em;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff4d4d;
+        }
+
+        nav ul li::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #ff4d4d;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: center;
+        }
+
+        nav ul li:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* Login/Register Form */
+        .form-section {
+            background: #292929;
+            margin: 1em 0;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            margin: 20px auto;
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background: #292929;
+            color: #ffffff;
+        }
+
+        input[type="submit"] {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .toggle-link {
+            color: #ff4d4d;
+            cursor: pointer;
+            text-decoration: underline;
+            margin-top: 10px;
+            display: block;
+        }
+
+        /* Home Section */
+        #home {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #muscle-group {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        #muscle-group a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #muscle-group a:hover {
+            background-color: #ff4d4d;
+        }
+
+        /* Workout List */
+        #workout-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .workout-item {
+            background-color: #292929;
+            color: #ffffff;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            max-width: 300px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background: #121212;
+            color: #ffffff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <h1>FitFlex</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#" onclick="showLoginForm()">Register Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Login/Register Section -->
+        <section id="login-section" class="form-section hidden">
+            <form id="login-form">
+                <h3>Login</h3>
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                <input type="submit" value="Login">
+                <span class="toggle-link" onclick="toggleForm('register-form')">Not a member? Register now</span>
+            </form>
+
+            <form id="register-form" class="form-section hidden">
+                <h3>Register</h3>
+                <label for="register-name">Name:</label>
+                <input type="text" id="register-name" name="name" required>
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" name="email" required>
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" name="password" required>
+                <input type="submit" value="Register">
+                <span class="toggle-link" onclick="toggleForm('login-form')">Already a member? Login here</span>
+            </form>
+        </section>
+
+        <!-- Home Section -->
+        <section id="home" class="page">
+            <h2>Welcome to FitFlex!</h2>
+            <div id="muscle-group">
+                <a href="#" onclick="displayWorkouts('chest')">Chest</a>
+                    <a href="#" onclick="displayWorkouts('back')">Back</a>
+                    <a href="#" onclick="displayWorkouts('legs')">Legs</a>
+                    <a href="#" onclick="displayWorkouts('arms')">Arms</a>
+                    <a href="#" onclick="displayWorkouts('abs')">Abs</a>
+                </div>
+                <div id="workout-list">
+                    <!-- Workout items will be dynamically inserted here -->
+                </div>
+            </section>
+    
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 FitFlex. All rights reserved.</p>
+        </footer>
+    
+        <script>
+            function showLoginForm() {
+                document.getElementById('login-section').classList.remove('hidden');
+            }
+    
+            function toggleForm(formId) {
+                document.querySelectorAll('.form-section').forEach(form => {
+                    form.classList.add('hidden');
+                });
+                document.getElementById(formId).classList.remove('hidden');
+            }
+    
+            function displayWorkouts(muscleGroup) {
+                // Hardcoded sample workouts for demonstration
+                const workouts = {
+                    'chest': [
+                        'Push-ups',
+                        'Bench Press',
+                        'Chest Flyes'
+                    ],
+                    'back': [
+                        'Pull-ups',
+                        'Deadlifts',
+                        'Barbell Rows'
+                    ],
+                    'legs': [
+                        'Squats',
+                        'Lunges',
+                        'Deadlifts'
+                    ],
+                    'arms': [
+                        'Bicep Curls',
+                        'Tricep Dips',
+                        'Hammer Curls'
+                    ],
+                    'abs': [
+                        'Crunches',
+                        'Leg Raises',
+                        'Plank'
+                    ]
+                };
+    
+                const workoutList = document.getElementById('workout-list');
+                workoutList.innerHTML = ''; // Clear previous workouts
+    
+                workouts[muscleGroup].forEach(workout => {
+                    const workoutItem = document.createElement('div');
+                    workoutItem.classList.add('workout-item');
+                    workoutItem.textContent = workout;
+                    workoutList.appendChild(workoutItem);
+                });
+            }
+        </script>
+    </body>
+    </html>
+    
