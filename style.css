@@ -22,7 +22,7 @@ body{
 
 
 
-.footer{
+/* .footer{
     background-color: #20409a;
 
 }
@@ -31,16 +31,16 @@ footer{
     
     height: 50vh;
     background-color: #20409a;  
-}
+} */
 
 
 
-.logo{
+/* .logo{
     width: 20%;
     padding-left: 5vw;
     margin-top: 2vh;
     height: auto;
-} 
+}  */
 
 @media screen and (max-width:600px) {
     .logo{
@@ -89,8 +89,8 @@ footer{
 } 
 
 .heading{
-    color: #20409a;
-    background-color: #e2e2e2 !important;
+    color: #000;
+    background-color: #000 !important;
 }
 
 /* .heading h1{
@@ -138,7 +138,7 @@ footer{
     top: 50%;
     content: counter(steps);
     border-radius: 500px;
-   background: #20409a;
+   background: #f36130;
    position: absolute;
    width: 3rem;
    height: auto;
@@ -156,7 +156,7 @@ footer{
         top: 50%;
         content: counter(steps);
         border-radius: 500px;
-       background: #20409a;
+       background: #f36130;
        position: absolute;
        width: 2.5rem;
        height: auto;
