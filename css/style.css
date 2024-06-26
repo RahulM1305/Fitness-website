@@ -237,6 +237,10 @@ ol {
 	cursor: pointer;
 }
 
+a{
+	text-decoration: none;
+}
+
 .search-model {
 	display: none;
 	position: fixed;
@@ -315,6 +319,10 @@ ol {
 	margin-right: 32px;
 	position: relative;
 	z-index: 1;
+	
+}
+.nav-menu a{
+	text-decoration: none;
 }
 
 .nav-menu ul li .dropdown {
@@ -1081,6 +1089,10 @@ ol {
 	content: "|";
 	color: #545454;
 }
+
+body-map__muscle path:hover{   
+    fill: crimson;
+} 
 
 .gt-text ul li:last-child {
 	margin-right: 0;
