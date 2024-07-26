@@ -43,7 +43,7 @@ function calculateMacros() {
 
     document.getElementById('macroResult').innerHTML = `
         <h3>Your Daily Caloric and Macronutrient Breakdown</h3>
-        <table class="table">
+        <table style="color: #c4c4c4;" class="table">
             <thead>
                 <tr>
                     <th>Nutrient</th>
