@@ -19,7 +19,7 @@ function calculateCalories() {
 
     const calories = bmr * activity;
 
-    document.getElementById('caloriesResult').innerHTML = `Your daily caloric need is ${calories.toFixed(2)} calories.`;
+    // document.getElementById('caloriesResult').innerHTML = `Your daily caloric need is ${calories.toFixed(2)} calories.`;
 
     // Calculate calories for weight loss and weight gain
     const weightLossCalories = calories - 500; // Roughly 0.45 kg (1 lb) per week
@@ -27,7 +27,7 @@ function calculateCalories() {
 
     document.getElementById('calorieTable').innerHTML = `
         <h3>Caloric Needs for Weight Change</h3>
-        <table class="table">
+        <table style="color: #c4c4c4;" class="table">
             <thead>
                 <tr>
                     <th>Goal</th>
