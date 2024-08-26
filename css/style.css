@@ -737,7 +737,7 @@ a{
   Pricing Section
 -----------------------*/
 
-/* .pricing-section {
+.pricing-section {
 	background: #151515;
 }
 
@@ -849,7 +849,7 @@ a{
 	transform: skewY(4deg);
 	opacity: 0;
 	visibility: hidden;
-} */
+} 
 
 /*---------------------
   Gallery Section
@@ -1342,7 +1342,7 @@ body-map__muscle path:hover{
   Testimonial Section
 -----------------------*/
 
-/* .testimonial-section {
+ .testimonial-section {
 	background: #151515;
 }
 
@@ -2046,7 +2046,7 @@ body-map__muscle path:hover{
   Blog Section
 -----------------------*/
 
-/* .blog-section {
+.blog-section {
 	background: #151515;
 }
 
