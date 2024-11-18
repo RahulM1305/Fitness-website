@@ -78,7 +78,7 @@ A modern, responsive fitness website that provides users with resources, workout
   ![image](https://github.com/user-attachments/assets/de011d3c-9159-4182-bc3c-ab9dcfcfa0d0)
   
 - Macro Calculator
-  ![image](https://github.com/user-attachments/assets/5175430c-4f0c-4728-84d1-d9f00d2e6663)
+  ![image](https://github.com/user-attachments/assets/c296782e-112f-43af-89ce-6aadf9fb4455)
   ![image](https://github.com/user-attachments/assets/5d97eafc-43a4-4109-9295-c6306ad4a32e)
 
 - Calories Calculator
