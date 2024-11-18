@@ -70,19 +70,19 @@ A modern, responsive fitness website that provides users with resources, workout
   ![image](https://github.com/user-attachments/assets/68fd4db3-242f-4f51-928b-0707f5f136a2)
 
 - Exercise section
-  ![image](https://github.com/user-attachments/assets/d56e6c0e-f099-4112-b887-40775ccdcb95)
+  ![fw2](https://github.com/user-attachments/assets/7394c3cc-86f0-4193-8c47-c8603e3ad0c7)
   ![image](https://github.com/user-attachments/assets/32b96f4a-770c-40e7-94b2-30e6bc5ccad2)
 
 - BMI Calculator
-  ![image](https://github.com/user-attachments/assets/5293ecd9-71f8-46eb-be42-c680dc22e002)
+  ![image](https://github.com/user-attachments/assets/10b35b03-4b48-4544-99e2-2f4e859fcabe)
   ![image](https://github.com/user-attachments/assets/de011d3c-9159-4182-bc3c-ab9dcfcfa0d0)
   
 - Macro Calculator
-  ![image](https://github.com/user-attachments/assets/c6e4349b-587f-44cf-a1c0-8b9837afb4fd)
+  ![image](https://github.com/user-attachments/assets/5175430c-4f0c-4728-84d1-d9f00d2e6663)
   ![image](https://github.com/user-attachments/assets/5d97eafc-43a4-4109-9295-c6306ad4a32e)
 
 - Calories Calculator
-  ![image](https://github.com/user-attachments/assets/a7eb34f3-6cb9-4fcf-a7c6-84f7c88f53a3)
+  ![image](https://github.com/user-attachments/assets/f9a54fc4-bd7c-4261-81c2-61aa243c38b3)
   ![image](https://github.com/user-attachments/assets/a6de7875-4f9d-412c-a9a3-259033d054d6)
 
 
