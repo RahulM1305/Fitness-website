@@ -65,20 +65,29 @@ A modern, responsive fitness website that provides users with resources, workout
 
 ## Screenshots
 
-Add screenshots or GIFs of your website to showcase the design and functionality. Include images of:
 
 - Homepage
-- Workout Plans section
-- Nutrition section
-- Contact/Subscription form
+  ![image](https://github.com/user-attachments/assets/68fd4db3-242f-4f51-928b-0707f5f136a2)
 
-Example:
-```markdown
-![Homepage](./screenshots/homepage.png)
-![Workout Plans](./screenshots/workout-plans.png)
-```
+- Exercise section
+  ![image](https://github.com/user-attachments/assets/d56e6c0e-f099-4112-b887-40775ccdcb95)
+  ![image](https://github.com/user-attachments/assets/32b96f4a-770c-40e7-94b2-30e6bc5ccad2)
 
----
+- BMI Calculator
+  ![image](https://github.com/user-attachments/assets/5293ecd9-71f8-46eb-be42-c680dc22e002)
+  ![image](https://github.com/user-attachments/assets/de011d3c-9159-4182-bc3c-ab9dcfcfa0d0)
+  
+- Macro Calculator
+  ![image](https://github.com/user-attachments/assets/c6e4349b-587f-44cf-a1c0-8b9837afb4fd)
+  ![image](https://github.com/user-attachments/assets/5d97eafc-43a4-4109-9295-c6306ad4a32e)
+
+- Calories Calculator
+  ![image](https://github.com/user-attachments/assets/a7eb34f3-6cb9-4fcf-a7c6-84f7c88f53a3)
+  ![image](https://github.com/user-attachments/assets/a6de7875-4f9d-412c-a9a3-259033d054d6)
+
+
+
+
 
 ## Contributing
 
