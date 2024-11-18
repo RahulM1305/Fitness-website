@@ -1,4 +1,3 @@
-Here’s a detailed README file for your Fitness Website project. Feel free to modify it based on the specifics of your implementation.
 
 ---
 
