@@ -120,7 +120,7 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 For any questions or feedback, feel free to reach out:
 
-- **Email**: [rahulmishra1305@gmail.com](mailto:rahulmishra1305@gmail.com)
+- **Email**: [rahulamishra1305@gmail.com](mailto:rahulamishra1305@gmail.com)
 - **LinkedIn**: [Rahul's Profile](https://www.linkedin.com/in/rahulm1305/)
 - **GitHub**: [RahulM1305](https://github.com/RahulM1305)
 
